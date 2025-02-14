@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .code-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .code {
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container">
+    <h1 id="verification_heading">Verify Your Account</h1>
+    <p id="verification_subtext">Please enter the OTP sent to your registered mobile number.</p>
+    <div class="code-container">
+        <input type="text" maxlength="1" class="code" id="code-1">
+        <input type="text" maxlength="1" class="code" id="code-2">
+        <input type="text" maxlength="1" class="code" id="code-3">
+        <input type="text" maxlength="1" class="code" id="code-4">
+        <input type="text" maxlength="1" class="code" id="code-5">
+        <input type="text" maxlength="1" class="code" id="code-6">
+    </div>
+</div>
+
 
 </body>
-
 </html>
