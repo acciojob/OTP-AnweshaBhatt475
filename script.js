@@ -15,3 +15,6 @@ for (let i = 0; i < codes.length; i++) {
         }
     });
 }
+cy.get(".code-container").find("input.code").eq(0).type(5);
+cy.wait(500);
+cy.focused().should("id", "code-2");
